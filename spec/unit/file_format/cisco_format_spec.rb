@@ -16,19 +16,19 @@ describe RequestLogAnalyzer::FileFormat::Cisco do
       
       
       it { should parse_line(deny_sample, 'a sample line')
-        .and_capture(:timestamp => '2012-09-16T09:05:02-04:00',
+        .and_capture(:timestamp => 20120916090502,
                      :source_ip => '211.79.36.208',
                      :destination_ip => '199.253.247.63')
       }
       
       it { should parse_line(built_sample, 'a sample line')
-        .and_capture(:timestamp => '2012-09-16T09:05:00-04:00',
+        .and_capture(:timestamp => 20120916090500,
                      :source_ip => '170.148.136.154',
                      :destination_ip => '170.148.140.14')
       }
       
       it { should parse_line(gaddr_sample, 'a sample line')
-             .and_capture(:timestamp => '2012-09-16T09:05:01-04:00',
+             .and_capture(:timestamp => 20120916090501,
                           :source_ip => '159.53.114.11')
                           
       }
