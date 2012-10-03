@@ -36,6 +36,7 @@ module RequestLogAnalyzer::FileFormat
     
     # generate reports
     report do |analyze|
+      analyze.hourly_spread
       analyze.timespan
     end
 
