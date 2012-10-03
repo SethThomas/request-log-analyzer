@@ -37,6 +37,7 @@ Gem::Specification.new do |s|
     s.add_development_dependency('activerecord-jdbcsqlite3-adapter')
   else
     s.add_development_dependency('sqlite3')
+    s.add_development_dependency('faker')
   end
   
   s.authors  = ['Willem van Bergen', 'Bart ten Brinke']
